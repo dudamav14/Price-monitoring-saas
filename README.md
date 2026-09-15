@@ -1,5 +1,5 @@
 <div align="center">
-  <h1>🚀 MarketPulse AI</h1>
+  <h1> MarketPulse AI</h1>
   <p><strong>SaaS de Inteligência de Mercado & Monitoramento de E-Commerce</strong></p>
 
   <p>
@@ -19,26 +19,25 @@ Plataforma completa de Inteligência de Negócios e E-Commerce orientada a dados
 
 ---
 
-## 📸 Visão Geral da Solução
+##  Visão Geral da Solução
 
 O **MarketPulse AI** monitora os principais marketplaces (Amazon Brasil, Mercado Livre, Kabum, Magalu) e fornece dashboards executivos em tempo real. A plataforma centraliza a análise da concorrência, identificando tendências de preços e avaliando a percepção do consumidor sobre os produtos através de Inteligência Artificial.
 
-> 💡 **Nota:** *Insira aqui uma captura de tela do seu Dashboard.*
-> `![Dashboard Preview](./docs/dashboard-preview.png)`
+> ![Dashboard Preview](./docs/dashboard-preview.png)`
 
 ---
 
-## ✨ Principais Funcionalidades
+##  Principais Funcionalidades
 
-- ⚡ **Alertas de Ofertas Relâmpago e Descontos Reais:** Cálculo de variação percentual de preços (\(\Delta P\)) com base no histórico temporal (não apenas o desconto anunciado pela loja).
-- 🧠 **Raio-X de Sentimento dos Consumidores (IA):** Análise contextual de comentários via modelos NLP treinados em Português (classificando em `POSITIVE`, `NEUTRAL`, `NEGATIVE` e calculando % de confiança).
-- 🔄 **Ingestão Contínua & Web Scraping Resiliente:** Monitoramento automatizado de URLs com rotação de cabeçalhos e estratégias de *Exponential Backoff*.
-- ➕ **Cadastro Manual Intuitivo:** Permite adicionar novos produtos diretamente pela interface com disparo automático do pipeline de IA.
-- 🎨 **Interface Responsiva & Glassmorphism:** Dashboard moderno em Dark Mode com gráficos interativos de séries temporais.
+-  **Alertas de Ofertas Relâmpago e Descontos Reais:** Cálculo de variação percentual de preços (\(\Delta P\)) com base no histórico temporal (não apenas o desconto anunciado pela loja).
+-  **Raio-X de Sentimento dos Consumidores (IA):** Análise contextual de comentários via modelos NLP treinados em Português (classificando em `POSITIVE`, `NEUTRAL`, `NEGATIVE` e calculando % de confiança).
+-  **Ingestão Contínua & Web Scraping Resiliente:** Monitoramento automatizado de URLs com rotação de cabeçalhos e estratégias de *Exponential Backoff*.
+-  **Cadastro Manual Intuitivo:** Permite adicionar novos produtos diretamente pela interface com disparo automático do pipeline de IA.
+-  **Interface Responsiva & Glassmorphism:** Dashboard moderno em Dark Mode com gráficos interativos de séries temporais.
 
 ---
 
-## 🏛️ Arquitetura do Sistema
+##  Arquitetura do Sistema
 
 A aplicação foi projetada utilizando microsserviços para separar o processamento pesado de IA da API transacional.
 
@@ -55,7 +54,7 @@ graph TD
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+##  Tecnologias Utilizadas
 
 **Frontend:**
 - React 18 + TypeScript + Vite
@@ -83,7 +82,7 @@ graph TD
 
 ---
 
-## 📁 Estrutura do Monorepo
+##  Estrutura do Monorepo
 
 ```text
 market-pulse-ai/
@@ -99,7 +98,7 @@ market-pulse-ai/
 
 ---
 
-## 🔒 Destaques Técnicos de Segurança & Integridade de Dados
+##  Destaques Técnicos de Segurança & Integridade de Dados
 
 - **Prevenção de SQL Injection:** 100% das consultas SQL utilizam parâmetros preparados (`$1, $2`).
 - **Validação e Resiliência:** Suporte duplo no repositório de dados para busca por **UUID relacional** e por **Nome Textual** com sanitização via Regex.
@@ -109,7 +108,7 @@ market-pulse-ai/
 
 ---
 
-## 🚦 Como Executar a Aplicação Localmente
+##  Como Executar a Aplicação Localmente
 
 ### Pré-requisitos
 Certifique-se de ter instalado em sua máquina:
@@ -118,7 +117,7 @@ Certifique-se de ter instalado em sua máquina:
 - [Python 3.10+](https://www.python.org/) e `pip`
 - Git
 
-### 1️⃣ Clonar o Repositório e Configurar Variáveis de Ambiente
+### 1️ Clonar o Repositório e Configurar Variáveis de Ambiente
 
 ```bash
 git clone https://github.com/SEU_USUARIO/projeto-saas.git
@@ -131,7 +130,7 @@ cp .env.example .env
 
 Revise o arquivo `.env` para garantir que as portas e senhas estão corretas para o seu ambiente.
 
-### 2️⃣ Subir o Banco de Dados PostgreSQL (Docker)
+### 2️ Subir o Banco de Dados PostgreSQL (Docker)
 
 ```bash
 docker-compose up -d
@@ -156,7 +155,7 @@ python run_pipeline.py
 ```
 > *(Nota: Ao rodar pela primeira vez, o Python baixará o modelo NLP do HuggingFace, o que pode levar alguns minutos dependendo da conexão).*
 
-### 4️⃣ Executar a API RESTful (Node.js + TypeScript)
+### 4️ Executar a API RESTful (Node.js + TypeScript)
 
 Em um novo terminal:
 ```bash
@@ -166,7 +165,7 @@ npm run dev
 ```
 > A API estará disponível em `http://localhost:3000/api/v1/health`.
 
-### 5️⃣ Executar a Interface Web (React)
+### 5️ Executar a Interface Web (React)
 
 Em um novo terminal:
 ```bash
@@ -178,7 +177,7 @@ npm run dev
 
 ---
 
-## 📊 Endpoints Principais da API (`/api/v1`)
+##  Endpoints Principais da API (`/api/v1`)
 
 | Método | Rota | Descrição |
 | :--- | :--- | :--- |
@@ -191,7 +190,7 @@ npm run dev
 
 ---
 
-## 🤝 Como Contribuir
+## Como Contribuir
 
 1. Faça um **Fork** do projeto
 2. Crie uma branch para sua feature (`git checkout -b feature/MinhaNovaFeature`)
@@ -201,15 +200,15 @@ npm run dev
 
 ---
 
-## 📄 Licença
+##  Licença
 
 Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
 ---
 
-## 👨‍💻 Autor
+##  Autor
 
-Desenvolvido por **[Seu Nome/Seu Perfil]** - Projeto criado seguindo as melhores práticas de Engenharia de Software, Arquitetura Limpa, Engenharia de Dados e Inteligência Artificial.
+Desenvolvido por **Maria Eduarda Teixeira Mendes/dudamav14** - Projeto criado seguindo as melhores práticas de Engenharia de Software, Arquitetura Limpa, Engenharia de Dados e Inteligência Artificial.
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/seu-perfil/)
-[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/seu-usuario)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mariaeduardateixeiramendes/)
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/dudamav14)
