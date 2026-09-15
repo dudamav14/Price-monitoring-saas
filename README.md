@@ -22,8 +22,7 @@ Plataforma completa de Inteligência de Negócios e E-Commerce orientada a dados
 ##  Visão Geral da Solução
 
 O **MarketPulse AI** monitora os principais marketplaces (Amazon Brasil, Mercado Livre, Kabum, Magalu) e fornece dashboards executivos em tempo real. A plataforma centraliza a análise da concorrência, identificando tendências de preços e avaliando a percepção do consumidor sobre os produtos através de Inteligência Artificial.
-
-> ![Dashboard Preview](./docs/dashboard-preview.png)`
+![Dashboard Preview](./docs/dashboard-preview.png)
 
 ---
 
