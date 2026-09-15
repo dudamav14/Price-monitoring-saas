@@ -1,0 +1,23 @@
+# Core Web Scraping & HTTP
+requests>=2.31.0
+beautifulsoup4>=4.12.0
+lxml>=5.1.0
+fake-useragent>=1.5.0
+
+# Data Analysis & Statistics
+pandas>=2.2.0
+numpy>=1.26.0
+
+# Database Connectivity
+psycopg2-binary>=2.9.0
+pg8000>=1.31.0
+sqlalchemy>=2.0.0
+
+# API Microservice Framework
+fastapi>=0.110.0
+uvicorn>=0.28.0
+pydantic>=2.6.0
+
+# Utilities & Testing
+python-dotenv>=1.0.0
+pytest>=8.0.0
